@@ -1,0 +1,49 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build (debug)",
+			"command": "gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"*.c",
+				"-o",
+				"${workspaceFolder}\\debug\\debug.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build (release)",
+			"command": "gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"*.c",
+				"-o3",
+				"-o",
+				"${workspaceFolder}\\debug\\debug.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"detail": "compiler: gcc.exe"
+		}
+	]
+}

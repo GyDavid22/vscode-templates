@@ -1,0 +1,97 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build (debug)",
+			"command": "g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"*.cpp",
+				"-o",
+				"${workspaceFolder}\\debug\\debug.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build (release)",
+			"command": "g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"*.cpp",
+				"-o3",
+				"-o",
+				"${workspaceFolder}\\release\\release.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"detail": "compiler: g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build (debug, with C files)",
+			"command": "g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"*.cpp",
+				"-g",
+				"*.c",
+				"-o",
+				"${workspaceFolder}\\debug\\debug.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"detail": "compiler: g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build (release, with C files)",
+			"command": "g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"*.cpp",
+				"-g",
+				"*.c",
+				"-o3",
+				"-o",
+				"${workspaceFolder}\\release\\release.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"detail": "compiler: g++.exe"
+		}
+	]
+}
