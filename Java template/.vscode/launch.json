@@ -9,7 +9,7 @@
             "name": "Launch",
             "request": "launch",
             "mainClass": "main.Main",
-            "console": "externalTerminal"
+            "console": "integratedTerminal"
         }
     ]
 }
