@@ -1,5 +1,5 @@
 This repository contains premade Hello world templates for Visual Studio Code with premade debug and build options.
-These settings assume that you have MinGW/JDK/Python installed and added it/them to the system variables. (So it doesn't matter where you installed them.)
+These settings assume that you have MinGW/JDK/Python/Node.js installed and added it/them to the system variables. (So it doesn't matter where you installed them.)
 You can easily test if your setup is ready. Simply open a command line window and enter the following:
 
 C/C++:
@@ -13,6 +13,10 @@ java --version
 Python:
 
 py --version
+
+JavaScript/TypeScript:
+
+node --version
 
 If you don't receive an error message when you run these commands as they are then you are ready.
 
